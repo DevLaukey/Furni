@@ -7,7 +7,13 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/mediaquerries.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fullpage -->
@@ -17,20 +23,36 @@
 <body>
     <div id="fullpage">
         <div class="section">
+
+
             <!-- Header -->
             <header id="header">
-                <div class="logo"><a href="https://devlaukey.github.io/Victor-2.0/"> Furni <span>by Laukey</span></a></div>
-                <a href="#menu"><span>Menu</span></a>
-            </header>
+                <div class="logo positioning"><a href="https://devlaukey.github.io/Victor-2.0/" style="color: black;"> Furni <span style="color: black;">by Laukey</span></a></div>
+                <a style="color: black;" href="#menu"><span>Menu</span></a>
+                <!-- add here -->
+                <nav id="media" class="navbar navbar-expand-sm navbar-light">
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarcollapse">
+                                                   </button>
+                    <div class="collapse navbar-collapse" id="navbarcollapse">
+                        <ul class="navbar-nav justify-content-between w-100">
+                            <li><a href="#" class="nav-link active" style="font-family: 'Lemonada', cursive; font-weight: 500; color: black; font-size: 15px;">Type 1</a></li>
+                            <li><a href="#" class="nav-link" style="font-family: 'Lemonada', cursive; font-weight: 500; color: black; font-size: 15px;">Type 2</a></li>
+                            <li><a href="#" class="nav-link" style="font-family: 'Lemonada', cursive; font-weight: 500; color: black; font-size: 15px;">Type 3</a></li>
 
-            <!-- Nav -->
-            <nav id="menu">
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="generic.html">Generic</a></li>
-                    <li><a href="elements.html">Elements</a></li>
-                </ul>
-            </nav>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- add here -->
+
+                <!-- Nav -->
+                <nav id="menu">
+                    <ul class="links" style="color: black;">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="generic.html">Generic</a></li>
+                        <li><a href="elements.html">Elements</a></li>
+                    </ul>
+                </nav>
+            </header>
 
             <!-- Banner -->
             <!--
@@ -39,19 +61,25 @@
 			the background image.
 		-->
             <section id="banner" class="bg-img" data-bg="pic1.jpeg">
-                <div class="inner" data-aos="fade-up" data-aos-delay="50">
+                <div class="inner" data-aos="fade-up" data-aos-delay="100">
                     <header>
                         <h1>Furni</h1>
                     </header>
+                    <div class="container" data-aos="fade-up" data-aos-delay="50">
+                        <a href="something" class="button3 ">order</a>
+                        <a href="something" class="button3">learn </a>
+                    </div>
                 </div>
+
                 <a href="#one" class="more">Learn More</a>
             </section>
+
         </div>
         <!-- One -->
-        <div class="section getback1 ">
+        <div class="section getback1">
             <span id="one" class="wrapper po bg-img " data-bg="">
                 <div class="inner ">
-                    <article class="box ">
+                    <article class="bx ">
                         <header>
                             <h2>Nibh non lobortis mus nibh</h2>
                             <p>01.01.2017</p>
@@ -131,7 +159,7 @@
             </section>
         </div>
         <!-- Footer -->
-        <div class="section">
+        <!-- <div class="section">
             <footer id="footer ">
                 <div class="inner ">
 
@@ -168,7 +196,7 @@
 
                 </div>
             </footer>
-        </div>
+        </div> -->
     </div>
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -177,7 +205,7 @@
     </script>
     <!-- Fullpage js -->
     <script type="text/javascript " src="https://unpkg.com/fullpage.js/dist/fullpage.min.js "></script>
-
+    <script src="./assets/js/fullpage.js"></script>
     <script>
         // fullpage.js initialization  
         new fullpage('#fullpage', {

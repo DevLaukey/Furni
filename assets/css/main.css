@@ -3927,7 +3927,8 @@ body.is-loading #banner:before {
     z-index: 2;
 } */
 
-.post .inner.current {
+
+/* .post .inner.current {
     opacity: 1;
 }
 
@@ -3959,7 +3960,7 @@ body.is-loading #banner:before {
     z-index: 1;
 }
 
-
+*/
 /* here */
 
 .po:before {
